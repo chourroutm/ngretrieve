@@ -1,5 +1,5 @@
-# ngvolbox ⏹️
-Script to replace volumes by their bounding box in a Neuroglancer link or state
+# ngretrieve ⤵️
+Script to retrieve a crop
 
 ## Dependencies
 
