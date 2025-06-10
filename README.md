@@ -18,9 +18,9 @@ pip install cloud-volume[zarr] neuroglancer numpy
 Pass either a Neuroglancer URL (`--url`) between single quotes or the path to a JSON file with a Neuroglancer state (`--json`).
 
 ```bash
-python download_from_points.py --url 'https://neuroglancer-demo.appspot.com/#!...' --volume_layer_name "layer1" --bbox_layer_name "layer2" [--output_dir '/path/to/output/'] [--margin 50] [--log]
+python download_from_annotation.py --url 'https://neuroglancer-demo.appspot.com/#!...' --volume_layer_name "layer1" --bbox_layer_name "layer2" [--output_dir '/path/to/output/'] [--margin 50] [--log]
 ```
 
 ```bash
-python download_from_points.py --json '/path/to/state.json' --volume_layer_name "layer1" --bbox_layer_name "layer2" [--output_dir '/path/to/output/'] [--margin 50] [--log]
+python download_from_annotation.py --json '/path/to/state.json' --volume_layer_name "layer1" --bbox_layer_name "layer2" [--output_dir '/path/to/output/'] [--margin 50] [--log]
 ```
