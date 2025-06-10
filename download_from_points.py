@@ -44,7 +44,7 @@ def download_from_bbox(output_dir: str, volume_source_url: str, bounding_box: cl
     
     vol = cloudvolume.CloudVolume(volume_source_url, parallel=True, progress=True, use_https=True)
 
-    vol_crop = vol.download(bounding_box, mip=0) # fancy Numpy array
+    vol_crop = vol.download(bounding_box, mip=0, parallel=1) # fancy Numpy array
     
     return vol_crop.save_images(directory=output_dir, image_format="TIFF", global_norm=False)
 
